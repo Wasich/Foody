@@ -10,11 +10,9 @@ public class Meals {
     @SerializedName("meals")
     @Expose
     private List<Meal> meals = null;
-
     public List<Meal> getMeals() {
         return meals;
     }
-
     public void setMeals(List<Meal> meals) {
         this.meals = meals;
     }

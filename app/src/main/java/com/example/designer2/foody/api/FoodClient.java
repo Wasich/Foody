@@ -16,7 +16,7 @@ public class FoodClient {
 
     public static Retrofit getFoodClient() {
 
-        return new Retrofit().Builder.baseUrl(BASE_URL)
+        return new Retrofit.Builder().baseUrl(BASE_URL)
                 .client(provideOkHttp())
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
